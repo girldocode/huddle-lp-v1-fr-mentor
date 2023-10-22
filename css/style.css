@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('./utilities.css');
+
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    Font-size: 18px;
+}
+
+header {
+    max-width: 100%;
+    height: 720px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: var(--Very-Pale-Cyan);
+    background-image: url('/images/bg-hero-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    z-index: -5;
+}
+
+/* hero section */
+section.hero {
+    margin-top: 10rem;
+}
+
+section.hero .hero-info .hero-image img {
+    width: 100%;
+}
+
+section.hero .hero-info .hero-content {
+    margin-top: 3rem;
+}
+
+section.hero .hero-info .hero-content h1 {
+    width: 70%;
+}
+
+section.hero .hero-info .hero-content p {
+    width: 75%;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    color: var(--Very-Dark-Cyan);
+    font-weight: 400;
+}
+
+/* section 2 */
+
+.card-image img {
+    width: 65%;
+    height: auto;
+}
+
+section.career {
+    margin-top: 15rem;
+}
+
+section.career .card-wrapper {
+    margin-bottom: 20rem;
+}
+
+section.career .card-wrapper .card {
+    padding-left: 6rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px -5px rgba(64, 64, 64, 0.6);
+}
+
+section.career .card-wrapper .card .card-content p {
+    color: var(--Grayish-Blue);
+}
+
+.card-image img {
+    width: 65%;
+    height: auto;
+}
+
+.card-content {
+    width: 99%;
+    margin: 0;
+    margin-top: 6rem;
+}
+
+section.career .card-1 .card-image img {
+    margin-left: 12rem;
+}
+
+section.career .card-3 .card-image img {
+    margin-left: 12rem;
+}
+
+/* section 3 */
+section.floating {
+    width: 95%;
+    max-width: 700px;
+    margin-inline: auto;
+    padding-top: 4rem;
+}
+
+section.floating .floating-wrapper {
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px -5px rgba(64, 64, 64, 0.6);
+    background: white;
+}
+
+section.floating .floating-content {
+    padding: 3rem 2rem;
+}
+
+section.floating .floating-content h2 {
+    margin-bottom: 2rem;
+}
+
+section.floating {
+    position: absolute;
+    top: -10.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* footer  */
+
+footer.ftr {
+    background: var(--Very-Dark-Cyan);
+    position: relative;
+}
+
+footer.ftr .container {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+
+footer.ftr .ftr-image {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* part 1 */
+.location {
+    margin-bottom: 2rem;
+}
+
+.location img {
+    margin-top: 0.45rem;
+
+}
+
+.location p {
+    color: white;
+    margin-left: 1rem;
+    width: 80%;
+}
+
+.call p {
+    color: white;
+    margin-left: 1rem;
+}
+
+.call {
+    margin-bottom: 2rem;
+}
+
+.email p {
+    color: white;
+    margin-left: 1rem;
+}
+
+.email {
+    margin-bottom: 2rem;
+}
+
+/* part 2 */
+
+.part ul a li {
+    color: white;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.part ul a:hover {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+.part ul a {
+    text-decoration: none;
+}
+
+/*_________part__________ 3 */
+.social div {
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 7px;
+}
+
+footer.ftr .social div {
+    margin-right: 2rem;
+}
+
+.social svg path {
+    color: white;
+}
+
+.social div:hover svg path {
+    fill: var(--dark);
+    transition: all 0.5s ease-in-out;
+}
+
+.social div:hover {
+    background-color: white;
+}
+
+/* credit */
+.credit {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.credit p {
+    color: white;
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+/* attribution */
+.attribution {
+    color: white;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: white;
+}
+
+
+
+
+/*____________Responsive__________________ */
+
+@media (max-width: 1100px) {
+    header {
+        max-width: 100%;
+        height: 130%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        background: url('/images/bg-hero-mobile.svg');
+        background-color: var(--Very-Pale-Cyan);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        z-index: -5;
+    }
+
+    section.hero .hero-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.hero .hero-info .hero-image img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 80%;
+    }
+
+    section.hero .hero-info .hero-content h1 {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    section.hero .hero-info .hero-content p {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+
+    section.hero .hero-info .hero-content button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+
+    section.hero .hero-info .hero-content .btn {
+        padding: 1.5rem 5rem;
+    }
+
+    section.career .card-wrapper .card {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2.5rem;
+    }
+
+    section.career .card-wrapper .card .card-content h2 {
+        margin-bottom: 2rem;
+    }
+
+    section.career .card-wrapper .card .card-content p {
+        margin-bottom: 4rem;
+    }
+
+    section.career .card-wrapper .card .card-content {
+        text-align: center;
+    }
+
+    section.career .card-wrapper .card-1 .card-content {
+        order: 2;
+        margin-bottom: 2rem;
+    }
+
+    section.career .card-wrapper .card-1 .card-image {
+        order: 1;
+    }
+
+    section.career .card-wrapper .card-1 .card-image img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    section.career .card-wrapper .card-2 .card-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.career .card-wrapper .card-3 .card-content {
+        order: 2;
+    }
+
+    section.career .card-wrapper .card-3 .card-image {
+        order: 1;
+    }
+
+    section.career .card-wrapper .card-3 .card-image img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    footer.ftr .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    footer.ftr .ftr-Contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer.ftr .social div {
+        margin-right: 3rem;
+    }
+
+    footer.ftr .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .credit {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    header .container {
+        padding-top: 2rem;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    .nav-btn .btn {
+        padding: 0.85rem 2.5rem;
+        font-weight: 700;
+        line-height: 0.8;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .nav-btn .btn {
+        padding: 0.85rem 1rem;
+        font-weight: 700;
+        line-height: 0.8;
+        font-size: 1rem;
+    }
+}
