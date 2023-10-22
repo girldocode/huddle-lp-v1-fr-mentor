@@ -27,8 +27,8 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repo](https://github.com/girldocode/huddle-lp-v1-fr-mentor)
+- Live Site URL: [Demo](https://huddle-lp-v1-fr-mentor.vercel.app/)
 
 ## My process
 
